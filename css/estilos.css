@@ -4,3 +4,13 @@ body
 	margin: 0 auto;
 	max-width: 1024px;
 }
+
+header
+{
+	text-align: center;
+}
+
+th, td
+{
+	color: blue;
+}
