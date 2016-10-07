@@ -5,12 +5,33 @@ body
 	max-width: 1024px;
 }
 
-header
+body header nav
 {
-	text-align: center;
+	/*display: none;*/
+	margin-top: 35px ;
 }
 
+body header nav ul li
+{
+	display: inline-block;
+	margin-right: 10px;
+}
+body header img
+{
+	float: right;
+	margin: -30px 30px;
+	width: 100px;
+}
 th, td
 {
 	color: blue;
+}
+#sectbl{
+	display: none;
+}
+
+.entradaUsuario{
+	display: none;
+	margin: 0 auto;
+	width: 350px;
 }

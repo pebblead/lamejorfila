@@ -6,20 +6,62 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/estilos.css">
 </head>
-
-<body background="Koala.jpg" style="background-size: 100%;">
-	<header class="page-header">
-		<h1>La Mejor Fila</h1>
+<body background="img/Koala.jpg" style="background-size: 100%;">
+	<header>
+		<h1>La mejor fila</h1> 
+		<img src="img/teclogo.png" alt="Logo del ITCuliacán" title="Logo del ITCuliacán">
 		<nav>
-			<ul class="nav nav-pills nav-justified">
-				<li><a href="" class="btn btn-primary">Inicio</a></li>
-				<li><a href="" class="btn btn-success">Login</a></li>
-				<li><a href="" class="btn btn-info">Registrar</a></li>
-				<li><a href="" class="btn btn-danger">Cerrar Sesión</a></li>
-			</ul>
-		</nav>
-	</header>
-	
+		<ul>
+			<li>
+				<button class="btn btn-primary" id="btninicio">
+					<span class="glyphicon glyphicon-home" aria-hidden="true"> 
+						Inicio
+					</span>
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-success" id="btnlogin">
+					<span class="glyphicon glyphicon-ok" aria-hidden="true"> 
+						Login
+					</span>
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-info" id="btnRegistrar">
+					<span class="glyphicon glyphicon-ok" aria-hidden="true"> 
+						Registrar
+					</span>
+				</button>
+			</li>
+			<li>
+				<button class="btn btn-danger">
+					<span class="glyphicon glyphicon-hand-right" aria-hidden="true"> 
+						Salir
+					</span>
+				</button>
+			</li>
+		</ul>
+	</nav>
+	</header>	
+
+	<section class="container">
+		<div class="entradaUsuario panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">Datos del Usuario</h3>
+			</div>
+			<div class="panel-body">
+				<input type="text" class="form-control" id="txtUsuario" placeholder="Nombre del usuario" autofocus>
+				<input type="password" class="form-control" id="txtClave" placeholder="Contraseña">
+				<button id="btnEntrar" class="btn btn-success btn-lg btn-block">Entrar</button>
+			</div>
+		</div>
+
+	</div>
+
+</form>
+</div>
+</section>
+<section class="container" id="sectbl" background="img/Koala.jpg" >
 	<table class="table table-hover">
 		<thead>
 			<tr>
@@ -42,6 +84,7 @@
 			<tr>
 				<td>Yukie</td>
 				<td>Es hermosa e inteligente</td>
+				<td><a href="" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span></a></td>
 			</tr>
 			<tr>
 				<td>Jorge</td>
@@ -55,6 +98,9 @@
 			</tr>
 		</tbody>
 	</table>
-	<script src="js/bootstrap.js"></script>
+</section>
+<script src="js/bootstrap.js"></script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="js/eventos.js"></script>
 </body>
 </html>
